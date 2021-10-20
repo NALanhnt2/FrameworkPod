@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		23698B432720143600A02F5C /* FrameworkPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 23698B412720143600A02F5C /* FrameworkPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23698B4A2720144900A02F5C /* MyPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23698B492720144900A02F5C /* MyPlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23698B3E2720143600A02F5C /* FrameworkPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23698B412720143600A02F5C /* FrameworkPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkPod.h; sourceTree = "<group>"; };
 		23698B422720143600A02F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23698B492720144900A02F5C /* MyPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				23698B412720143600A02F5C /* FrameworkPod.h */,
 				23698B422720143600A02F5C /* Info.plist */,
+				23698B492720144900A02F5C /* MyPlugin.swift */,
 			);
 			path = FrameworkPod;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					23698B3D2720143600A02F5C = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23698B4A2720144900A02F5C /* MyPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		23698B472720143600A02F5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4958ZLK95R;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dex.FrameworkPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		23698B482720143600A02F5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4958ZLK95R;
