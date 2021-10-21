@@ -20,7 +20,7 @@ s.author = { "anhnt2" => "anhnt2@nal.vn" }
 s.homepage = "https://github.com/NALanhnt2/FrameworkPod"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "git@github.com:NALanhnt2/FrameworkPod.git",
+s.source = { :git => "https://github.com/NALanhnt2/FrameworkPod.git",
              :tag => "#{s.version}" }
 
 # 7
